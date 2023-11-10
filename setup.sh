@@ -15,6 +15,7 @@ fc-cache -fv
 mkdir ~/.config
 # configure hypr
 mkdir ~/.config/hypr
+rm ~/.config/hypr/hyprland.conf
 ln -s ./hyprland-config ~/.config/hypr/hyprland.conf
 ln -s ./hyprpaper-config ~/.config/hypr/hyprpaper.conf
 # configure waybar
