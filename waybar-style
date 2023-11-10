@@ -1,0 +1,37 @@
+* {
+	font-family: 'cozette';
+	font-size: 13px;
+	min-height: 0px;
+	margin: 0;
+	padding: 0;
+}
+
+window#waybar {
+	background-color: transparent;
+	border: none;
+}
+
+#clock, #battery, #workspaces {
+	/*margin-right: 10px;*/
+	color: white;
+	/*margin-top: 10px;*/
+	margin-bottom: 10px;
+}
+
+#clock, #battery {
+	margin-right: 10px;
+}
+
+#workspaces {
+	margin-left: 10px;
+}
+
+#workspaces button {
+	color: white;
+	border-radius: 0;
+}
+
+#workspaces button.active {
+	border-bottom: 2px solid white;
+}
+

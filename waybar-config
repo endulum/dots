@@ -1,0 +1,12 @@
+{
+ "height": 20,
+ "position": "bottom",
+ "modules-left": ["hyprland/workspaces"],
+ "modules-right": ["battery", "clock"],
+
+ "clock": {
+  "interval": 1,
+  "format": "{:%r}",
+ }
+
+}

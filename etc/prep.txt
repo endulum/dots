@@ -1,0 +1,25 @@
+echo $(pacman -Qeq) > $HOME/dots/installed.txt
+
+[Fonts]
+sudo cp ./etc/fonts/* /usr/share/fonts/
+fc-cache
+
+[Hyprland]
+sudo pacman -S hyprland hyprpaper
+mkdir ~/.config/hypr
+ln -s ./hyprland-config ~/.config/hypr/hyprland.conf
+ln -s ./hyprpaper-config ~/.config/hypr/hyprpaper.conf
+
+[Waybar]
+sudo pacman -S waybar
+ln -s ./waybar-config ~/.config/waybar/config
+ln -s ./waybar-style ~/.config/waybar/style.css
+
+[Alacritty]
+sudo pacman -S alacritty
+ln -s ./alacritty-config ~/.alacritty.yml
+echo "alias split='alacritty --working-directory $(pwd) & disown'" >> .bashrc
+
+[Codium]
+sudo flatpak install codium
+ln -s ./vscode-config /home/endulum/.var/app/com.vscodium.codium/config/VSCodium/User/settings.json

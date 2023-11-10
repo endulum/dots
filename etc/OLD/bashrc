@@ -1,0 +1,40 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias tree='tree -C'
+
+alias blocks='bash $HOME/dots/blocks.sh'
+alias split='alacritty --working-directory $(pwd) & disown'
+
+PS1='[\u@\h \W]\$ '
+
+# Created by `pipx` on 2023-06-27 04:47:13
+export PATH="$PATH:/home/endulum/.local/bin"
+
+# for deno
+export DENO_INSTALL="/home/endulum/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+# powerline-shell
+function _update_ps1() {
+	PS1=$(powerline-shell $?)
+}
+
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+	PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+. "$HOME/.cargo/env"
+
+#blocks
+
+#echo $(pacman -Qeq) >> $HOME/dots/installed.txt

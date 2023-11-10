@@ -1,0 +1,57 @@
+[[ VSCODE FLATPAK ]]
+
+[ Use host shell in terminal ]
+Open the settings.json and paste this:
+
+{
+	"terminal.integrated.defaultProfile.linux": "bash",
+	"terminal.integrated.profiles.linux" : {
+		"bash": {
+			"path": "/usr/bin/flatpak-spawn",
+			"args": ["--host", "--env=TERM=xterm-256color", "bash"]
+		}
+	}
+}
+
+[ Font ]
+Open the settings.json and paste this:
+
+{
+	"terminal.integrated.fontFamily": "mononoki"
+}
+
+
+[[ UNGOOGLED-CHROMIUM FLATPAK ]]
+
+[ Change font ]
+Navigate to ~/.var/app/com.github.Eloston.UngoogledChromium/config/gtk-3.0/
+Create a file settings.ini and paste this:
+
+[Settings]
+gtk-font-name=mononoki 10
+
+[ uBlock Origin ]
+On another machine visit the repo for uBlock and find the download link for the latest stable file, type it into address bar and hit enter.
+
+
+[[ AUDIO ]]
+
+Just install alsa-utils, pulseaudio, and pavucontrol. Invoke pavucontrol to be able to adjust sound.
+
+
+[[ THUNAR ]]
+
+[ Remedy slow startup ]
+Just uninstall xdg-desktop-portal?
+
+[[ VIM ]]
+
+Follow directions in https://www.linode.com/docs/guides/vim-color-schemes/
+Using https://raw.githubusercontent.com/ghifarit53/tokyonight-vim/master/colors/tokyonight.vim
+Then input the vollowing into .vimrc
+
+syntax on
+colorscheme tokyo
+hi normal guibg=NONE ctermbg=NONE
+hi NonText guibg=NONE ctermbg=NONE
+hi EndOfBuffer guibg=NONE ctermbg=NONE
