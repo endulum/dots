@@ -9,4 +9,5 @@
         "source.fixAll": true
     },
     "eslint.validate": ["jsx", "javascript"],
+    // something here
 }
