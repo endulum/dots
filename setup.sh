@@ -5,7 +5,7 @@
 # polkit-kde-agent for authentication agent
 # qt5-wayland and qt6-wayland for qt wayland support
 
-sudo pacman -S hyprland xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland hyprpaper waybar alacritty flatpak
+sudo pacman -S hyprland xdg-desktop-portal-hyprland polkit-kde-agent qt5-wayland qt6-wayland hyprpaper waybar alacritty flatpak brightnessctl wlsunset vim
 sudo flatpak install codium librewolf 
 
 # configure fonts
