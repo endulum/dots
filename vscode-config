@@ -8,6 +8,10 @@
     "editor.codeActionsOnSave": {
         "source.fixAll": true
     },
-    "eslint.validate": ["jsx", "javascript"],
+    "eslint.validate": [
+        "jsx",
+        "javascript"
+    ],
+    "workbench.colorTheme": "Tokyo Night",
     // something here
 }
