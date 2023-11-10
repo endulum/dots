@@ -12,6 +12,7 @@ sudo flatpak install codium librewolf
 sudo cp ./etc/fonts/* /usr/share/fonts/
 fc-cache -fv
 
+mkdir ~/.config
 # configure hypr
 mkdir ~/.config/hypr
 ln -s ./hyprland-config ~/.config/hypr/hyprland.conf
