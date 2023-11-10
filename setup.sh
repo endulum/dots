@@ -16,14 +16,14 @@ mkdir ~/.config
 # configure hypr
 mkdir ~/.config/hypr
 rm ~/.config/hypr/hyprland.conf
-ln -s ./hyprland-config.conf ~/.config/hypr/hyprland.conf
-ln -s ./hyprpaper-config ~/.config/hypr/hyprpaper.conf
+ln -s ~/dots/hyprland-config ~/.config/hypr/hyprland.conf
+ln -s ~/dots/hyprpaper-config ~/.config/hypr/hyprpaper.conf
 # configure waybar
 mkdir ~/.config/waybar
-ln -s ./waybar-config ~/.config/waybar/config
-ln -s ./waybar-style ~/.config/waybar/style.css
+ln -s ~/dots/waybar-config ~/.config/waybar/config
+ln -s ~/dots/waybar-style ~/.config/waybar/style.css
 # configure alacritty
-ln -s ./alacritty-config ~/.alacritty.yml
+ln -s ~/dots/alacritty-config ~/.alacritty.yml
 echo "alias split='alacritty --working-directory $(pwd) & disown'" >> ~/.bashrc
 # configure codium
-ln -s ./vscode-config /home/endulum/.var/app/com.vscodium.codium/config/VSCodium/User/settings.json
+ln -s ~/dots/vscode-config /home/endulum/.var/app/com.vscodium.codium/config/VSCodium/User/settings.json
