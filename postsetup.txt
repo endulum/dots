@@ -2,3 +2,5 @@
 - Auth git using the steps at https://www.theodinproject.com/lessons/foundations-setting-up-git
 - Auth github-cli using 'gh auth lugin'
 - Allow pushing from here using 'git remote set-url origin git@github.com:endulum/dots.git'
+[WLSUNSET]
+- Build https://aur.archlinux.org/wlsunset.git

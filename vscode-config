@@ -13,5 +13,7 @@
         "javascript"
     ],
     "workbench.colorTheme": "Tokyo Night",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
     // something here
 }
