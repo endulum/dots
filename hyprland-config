@@ -2,7 +2,7 @@
 monitor=,preferred,auto,1
 
 # general
-exec-once = waybar & hyprpaper & alacritty
+exec-once = waybar & hyprpaper
 
 # polkit
 exec-once = /usr/lib/polkit-kde-authentication-agent-1
@@ -76,6 +76,11 @@ device:epic-mouse-v1 {
     sensitivity = -0.5
 }
 
+misc {
+    disable_hyprland_logo = true
+    disable_splash_rendering = true
+}
+
 # Example windowrule v1
 # windowrule = float, ^(kitty)$
 # Example windowrule v2
@@ -136,3 +141,5 @@ bind = ,XF86MonBrightnessUp, exec, brightnessctl set 10%+
 bind = ,XF86MonBrightnessDown, exec, brightnessctl set 10%-
 # Turn off or on red light
 bind = ,XF86WebCam, exec, bash ~/dots/sunset.sh
+# Toggle floating?
+bind = $mainMod, space, togglefloating
