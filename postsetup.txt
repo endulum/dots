@@ -4,3 +4,5 @@
 - Allow pushing from here using 'git remote set-url origin git@github.com:endulum/dots.git'
 [WLSUNSET]
 - Build https://aur.archlinux.org/wlsunset.git
+[STARFETCH]
+- Build https://github.com/Haruno19/starfetch
