@@ -11,7 +11,7 @@ exec-once = /usr/lib/polkit-kde-authentication-agent-1
 exec = sleep 0 & hyprctl keyword animations:enabled yes
 
 # configure suspend
-exec-once = swayidle -w lock 'swaylock -f' before-sleep 'swaylock -f; hyprctl dispatch dpms off' after-resume 'hyprctl dispatch dpms on'
+# exec-once = swayidle -w lock 'swaylock -f' before-sleep 'swaylock -f; hyprctl dispatch dpms off' after-resume 'hyprctl dispatch dpms on'
 
 # Source a file (multi-file configs)
 # source = ~/.config/hypr/myColors.conf
