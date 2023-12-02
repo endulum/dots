@@ -26,6 +26,8 @@ ln -s ~/dots/waybar-style ~/.config/waybar/style.css
 ln -s ~/dots/alacritty-config ~/.alacritty.yml
 # echo "alias split='alacritty --working-directory $(pwd) & disown'" >> ~/.bashrc
 # configure codium
+rm /home/endulum/.var/app/com.vscodium.codium/config/VSCodium/User/settings.json
 ln -s ~/dots/vscode-config /home/endulum/.var/app/com.vscodium.codium/config/VSCodium/User/settings.json
 # configure bashrc
+rm ~/.bashrc
 ln -s ~/dots/bash-config ~/.bashrc

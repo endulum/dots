@@ -137,8 +137,8 @@ bind = $mainMod SHIFT, left, resizeactive, -15 0
 bind = $mainMod SHIFT, up, resizeactive, 0 -15
 bind = $mainMod SHIFT, down, resizeactive, 0 15
 # Adjust brightness
-bind = ,XF86MonBrightnessUp, exec, brightnessctl set 10%+
-bind = ,XF86MonBrightnessDown, exec, brightnessctl set 10%-
+bind = , XF86MonBrightnessDown, exec, brightnessctl set 10%-
+bind = , XF86MonBrightnessDown, exec, brightnessctl set 10%-
 # Turn off or on red light
 bind = ,XF86WebCam, exec, bash ~/dots/sunset.sh
 # Toggle floating?
