@@ -19,5 +19,6 @@
         "configurations": [],
         "compounds": []
     },
+    "liveServer.settings.useLocalIp": true,
     // something here
 }
