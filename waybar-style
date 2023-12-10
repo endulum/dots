@@ -7,31 +7,58 @@
 }
 
 window#waybar {
-	background-color: transparent;
-	border: none;
+	background: linear-gradient(
+		to right, 
+		#f7768e, 
+		rgba(42, 195, 222, 0.25),
+		rgba(0,0,0,0), 
+		rgba(0,0,0,0),
+		rgba(0,0,0,0), 
+		rgba(0,0,0,0), 
+		rgba(42, 195, 222, 0.25),
+		#f7768e
+	);
+	border: 10px solid transparent;
+	border-top: 0px solid transparent;
 }
 
-#clock, #battery, #workspaces {
-	/*margin-right: 10px;*/
+#clock, #battery, #workspaces, #memory {
 	color: white;
-	/*margin-top: 10px;*/
 	margin-bottom: 10px;
 }
 
-#clock, #battery {
-	margin-right: 10px;
+#clock {
+	padding-right: 25px;
+}
+
+#battery {
+	padding-right: 15px;
+}
+
+#memory {
+	padding-right: 15px;
 }
 
 #workspaces {
-	margin-left: 10px;
+	padding-left: 15px;
 }
 
 #workspaces button {
 	color: white;
 	border-radius: 0;
+	transition: none;
 }
 
 #workspaces button.active {
-	border-bottom: 2px solid white;
+	border-bottom: 3px solid white;
+	padding-top: 3px;
 }
 
+#workspaces button:hover {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	text-shadow: none;
+	font-weight: normal;
+	font-size: 16px;
+}

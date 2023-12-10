@@ -1,12 +1,17 @@
 {
- "height": 20,
+ "height": 40,
  "position": "bottom",
  "modules-left": ["hyprland/workspaces"],
- "modules-right": ["battery", "clock"],
+ "modules-right": ["memory", "battery", "clock"],
 
  "clock": {
   "interval": 1,
   "format": "{:%r}",
- }
+ },
+
+ "memory": {
+   "interval": 1,
+   "format": "{used:0.1f}G/{total:0.1f}G"
+ },
 
 }
