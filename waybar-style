@@ -1,64 +1,42 @@
+*, *:hover {
+	background: none;
+}
+
 * {
 	font-family: 'Fixedsys Excelsior';
 	font-size: 16px;
-	min-height: 0px;
+	color: #a9b1d6;
 	margin: 0;
 	padding: 0;
 }
 
 window#waybar {
-	background: linear-gradient(
-		to right, 
-		#f7768e, 
-		rgba(42, 195, 222, 0.25),
-		rgba(0,0,0,0), 
-		rgba(0,0,0,0),
-		rgba(0,0,0,0), 
-		rgba(0,0,0,0), 
-		rgba(42, 195, 222, 0.25),
-		#f7768e
-	);
-	border: 10px solid transparent;
-	border-top: 0px solid transparent;
+	border: 2px solid white;
+	background: #1a1b26;
 }
 
-#clock, #battery, #workspaces, #memory {
-	color: white;
-	margin-bottom: 10px;
-}
-
-#clock {
-	padding-right: 25px;
-}
-
-#battery {
-	padding-right: 15px;
-}
-
-#memory {
-	padding-right: 15px;
-}
-
-#workspaces {
-	padding-left: 15px;
+button, button:hover {
+	background: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	text-shadow: none;
+	padding: 0;
+	transition: none
 }
 
 #workspaces button {
-	color: white;
-	border-radius: 0;
-	transition: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 #workspaces button.active {
-	border-bottom: 3px solid white;
-	padding-top: 3px;
+	padding-bottom: 0;
+	border-bottom: 5px solid white;
 }
 
-#workspaces button:hover {
-	background: transparent;
-	border: none;
-	box-shadow: none;
-	text-shadow: none;
-	font-weight: normal;
-	font-size: 16px;
-}
+#clock { color: #ffffff; padding-left: 15px; }
+#disk { color: #f7768e }
+#memory { color: #e0af68 }
+#backlight { color: #7dcfff; padding-right: 15px;}
+#battery { color: #9ece6a }

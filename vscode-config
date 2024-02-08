@@ -6,13 +6,12 @@
     "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
     "editor.codeActionsOnSave": {
-        "source.fixAll": true
+        "source.fixAll": "explicit"
     },
     "eslint.validate": [
         "jsx",
         "javascript"
     ],
-    "workbench.colorTheme": "Tokyo Night",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "launch": {
@@ -20,5 +19,32 @@
         "compounds": []
     },
     "liveServer.settings.useLocalIp": true,
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "sh": {
+            "path": "/usr/bin/sh"
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "workbench.colorTheme": "Tokyo Night",
+    "editor.fontLigatures": true,
+    "window.titleBarStyle": "custom",
     // something here
 }
