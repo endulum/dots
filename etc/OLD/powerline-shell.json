@@ -1,9 +1,0 @@
-{
-	"segments": ["cwd", "git"],
-	"cwd": {
-		"mode": "dironly",
-		"fg_color": 22,
-		"bg_color": 161
-	},
-	"theme": "~/dots/config/powerline-shell-theme.py"
-}

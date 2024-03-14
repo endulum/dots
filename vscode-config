@@ -1,7 +1,7 @@
 {
     "workbench.startupEditor": "none",
     "editor.fontFamily": "'Fixedsys Excelsior', monospace",
-    "editor.fontSize": 15,
+    "editor.fontSize": 16,
     "editor.tabSize": 2,
     "editor.minimap.enabled": false,
     "editor.wordWrap": "on",

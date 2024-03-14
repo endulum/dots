@@ -2,7 +2,7 @@
   "position": "bottom",
   "modules-left": ["clock", "hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["disk", "memory", "battery", "backlight"],
+  "modules-right": ["cpu", "memory", "battery", "pulseaudio"],
   "height": 1,
   "margin": "-5 10 10 10",
   "mode": "dock",
@@ -13,13 +13,13 @@
     "format": "{:%r}"
   },
 
-  "disk": {
-    "interval": 30,
-    "format": "DSK {percentage_used}%"
+  "cpu": {
+    "interval": 1,
+    "format": "CPU {usage}%"
   },
 
-  "backlight": {
-    "format": "BRI {percent}%"
+  "pulseaudio": {
+    "format": "SND {volume}%"
   },
 
   "memory": {

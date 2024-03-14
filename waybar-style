@@ -36,7 +36,8 @@ button, button:hover {
 }
 
 #clock { color: #ffffff; padding-left: 15px; }
-#disk { color: #f7768e }
+/*#pulseaudio { color: #bb9af7 }*/
+#cpu { color: #f7768e }
 #memory { color: #e0af68 }
-#backlight { color: #7dcfff; padding-right: 15px;}
+#pulseaudio { color: #7dcfff; padding-right: 15px;}
 #battery { color: #9ece6a }

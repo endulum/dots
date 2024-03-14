@@ -2,7 +2,16 @@
 - Auth git using the steps at https://www.theodinproject.com/lessons/foundations-setting-up-git
 - Auth github-cli using 'gh auth lugin'
 - Allow pushing from here using 'git remote set-url origin git@github.com:endulum/dots.git'
+[NPM]
+- Install node using the steps at https://www.theodinproject.com/lessons/foundations-installing-node-js
 [WLSUNSET]
 - Build https://aur.archlinux.org/wlsunset.git
 [STARFETCH]
 - Build https://github.com/Haruno19/starfetch
+[YAY]
+- Build https://github.com/Jguer/yay
+- ex. 'yay -S lutgen-bin'
+[KRITA]
+- 'sudo pacman -S huiontablet'
+- 'sudo flatpak install krita'
+- Follow this video: https://yewtu.be/watch?v=ChF9XWSSDFI
