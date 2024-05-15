@@ -1,6 +1,6 @@
 {
     "workbench.startupEditor": "none",
-    "editor.fontFamily": "'Fixedsys Excelsior', monospace",
+    "editor.fontFamily": "'Ark Pixel 16px Monospaced Latin', monospace",
     "editor.fontSize": 16,
     "editor.tabSize": 2,
     "editor.minimap.enabled": false,
@@ -46,5 +46,6 @@
     "workbench.colorTheme": "Tokyo Night",
     "editor.fontLigatures": true,
     "window.titleBarStyle": "custom",
+    "terminal.integrated.automationProfile.linux": {},
     // something here
 }

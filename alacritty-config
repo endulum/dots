@@ -26,18 +26,18 @@ foreground = "#a9b1d6"
 size = 12
 
 [font.bold]
-family = "Fixedsys Excelsior"
+family = "Ark Pixel 16px Monospaced latin"
 style = "bold"
 
 [font.normal]
-family = "Fixedsys Excelsior"
+family = "Ark Pixel 16px Monospaced latin"
 style = "regular"
 
 [font.offset]
 y = 2
 
 [window]
-opacity = 0.75
+opacity = 0.8
 
 [window.padding]
 x = 15

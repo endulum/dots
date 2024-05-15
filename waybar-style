@@ -3,7 +3,7 @@
 }
 
 * {
-	font-family: 'Fixedsys Excelsior';
+	font-family: 'Ark Pixel 16px Monospaced latin';
 	font-size: 16px;
 	color: #a9b1d6;
 	margin: 0;
@@ -11,7 +11,7 @@
 }
 
 window#waybar {
-	border: 2px solid white;
+	border: 1px solid white;
 	background: #1a1b26;
 }
 
@@ -27,12 +27,13 @@ button, button:hover {
 
 #workspaces button {
 	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-bottom: 4px;
 }
 
 #workspaces button.active {
-	padding-bottom: 0;
-	border-bottom: 5px solid white;
+	padding-bottom: 0px;
+  margin-bottom: 4px;
+	border-bottom: 1px solid white;
 }
 
 #clock { color: #ffffff; padding-left: 15px; }

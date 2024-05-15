@@ -36,9 +36,10 @@ input {
 general {
     gaps_in = 2
     gaps_out = 10
-    border_size = 2
-    col.active_border = rgba(f7768eff) rgba(7aa2f7ff) rgba(7dcfffff) rgba(7aa2f7ff) rgba(2ac3deff) 45deg
+    border_size = 1
+    # col.active_border = rgba(f7768eff) rgba(7aa2f7ff) rgba(7dcfffff) rgba(7aa2f7ff) rgba(2ac3deff) 45deg
     col.inactive_border = rgba(ffffffff)
+    col.active_border = rgba(ffffffff)
     layout = dwindle
 }
 
@@ -72,9 +73,9 @@ gestures {
     workspace_swipe = off
 }
 
-device:epic-mouse-v1 {
-    sensitivity = -0.5
-}
+#device:epic-mouse-v1 {
+#    sensitivity = -0.5
+#}
 
 misc {
     disable_hyprland_logo = true
@@ -86,6 +87,9 @@ misc {
 # Example windowrule v2
 # windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
 # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
+
+# windowrulev2 = opacity 1 override 0.8 override, fullscreen:0
+windowrule = float, title:^(Open File)|(Open Folder)$
 
 $mainMod = SUPER
 
@@ -147,5 +151,6 @@ bind = ,XF86AudioMicMute, exec, bash ~/dots/waybar.sh
 bind = $mainMod, space, togglefloating
 # Screenshot
 bind = ,Print, exec, hyprshot -m region
+bind = SHIFT, Print, exec, hyprshot -m output
 # Lock
 bind = ,F9, exec, swaylock
