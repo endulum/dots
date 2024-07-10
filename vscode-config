@@ -45,7 +45,7 @@
     "terminal.integrated.defaultProfile.linux": "bash",
     "workbench.colorTheme": "Tokyo Night",
     "editor.fontLigatures": true,
-    "window.titleBarStyle": "custom",
+    "window.titleBarStyle": "hidden",
     "terminal.integrated.automationProfile.linux": {},
     // something here
 }

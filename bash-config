@@ -15,3 +15,12 @@ export NVM_DIR="$HOME/.nvm"
 
 # for splitting terminals in same directory
 alias split='alacritty --working-directory $(pwd) & disown'
+
+#calling reflector
+function reflect {
+  sudo reflector -c $1 -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist
+}
+
+export -f reflect
+
+PATH=~/.console-ninja/.bin:$PATH

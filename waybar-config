@@ -1,51 +1,38 @@
 {
-  "position": "bottom",
-  "modules-left": ["clock", "hyprland/workspaces"],
-  "modules-center": ["hyprland/window"],
-  "modules-right": ["cpu", "memory", "battery", "pulseaudio"],
-  "height": 1,
-  "margin": "-5 10 10 10",
-  "mode": "dock",
-  "spacing": 15,
+    "layer": "top",
+    "position": "left",
+    "modules-left": ["clock", "hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["pulseaudio/slider", "network", "battery"],
 
-  "clock": {
-    "interval": 1,
-    "format": "{:%r}"
-  },
+    "hyprland/window": {
+        "max-length": 69,
+        "rotate": 90,
+    },
 
-  "cpu": {
-    "interval": 1,
-    "format": "CPU {usage}%"
-  },
+    "hyprland/workspaces": {
+        "format": "",
+    },
 
-  "pulseaudio": {
-    "format": "SND {volume}%"
-  },
+    "network": {
+        "rotate": 90,
+        "format": "NET {signalStrength}%",
+        "interval": 2
+    },
 
-  "memory": {
-    "interval": 1,
-    "format": "MEM {percentage}%"
-  },
+    "battery": {
+        "rotate": 90,
+        "format": "BAT {capacity}%",
+    },
 
-  "battery": {
-    "interval": 30,
-    "format": "BAT {capacity}%"
-  }
+    "clock": {
+        "rotate": 90,
+        "format": "{:%r}",
+        "interval": 1
+    },
+
+    "pulseaudio/slider": {
+        "orientation": "vertical",
+    },
+
 }
-
-// {
-// "height": 40,
-// "position": "bottom",
-// "modules-left": ["hyprland/workspaces"],
-// "modules-right": ["memory", "battery", "clock"],
-//
-// "clock": {
-//  "interval": 1,
-//  "format": "{:%r}",
-// },
-
-// "memory": {
-//   "interval": 1,
-//   "format": "{used:0.1f}G/{total:0.1f}G"
-// },
-//}

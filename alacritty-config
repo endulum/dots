@@ -26,18 +26,18 @@ foreground = "#a9b1d6"
 size = 12
 
 [font.bold]
-family = "Ark Pixel 16px Monospaced latin"
+family = "ProggyCleanTT"
 style = "bold"
 
 [font.normal]
-family = "Ark Pixel 16px Monospaced latin"
+family = "ProggyCleanTT"
 style = "regular"
 
 [font.offset]
 y = 2
 
 [window]
-opacity = 0.8
+opacity = 0.85
 
 [window.padding]
 x = 15
