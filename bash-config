@@ -14,7 +14,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # for splitting terminals in same directory
-alias split='alacritty --working-directory $(pwd) & disown'
+alias split='$TERM --working-directory $(pwd) & disown'
+alias bat='bat --color=always'
+alias tree='tree -afC --dirsfirst'
 
 #calling reflector
 function reflect {
@@ -23,4 +25,6 @@ function reflect {
 
 export -f reflect
 
-PATH=~/.console-ninja/.bin:$PATH
+
+export DATABASE_PASSWORD="endulum"
+export BAT_THEME="ansi"

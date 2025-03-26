@@ -4,13 +4,16 @@ monitor=,preferred,auto,1
 # general
 exec-once = waybar & hyprpaper & mako
 
+
 exec-once = bash ~/sunset.sh "on"
 
 # polkit
 exec-once = /usr/lib/polkit-kde-authentication-agent-1
 
 # prevent startup animation
-exec = sleep 0 & hyprctl keyword animations:enabled yes
+exec-once = sleep 0 & hyprctl keyword animations:enabled yes 
+exec-once = sleep 1 && wofi --show drun --hide-scroll --width 400 --height 300 --style ~/dots/wofi-style
+
 
 # configure suspend
 # exec-once = swayidle -w lock 'swaylock -f' before-sleep 'swaylock -f; hyprctl dispatch dpms off' after-resume 'hyprctl dispatch dpms on'
@@ -40,8 +43,8 @@ general {
     gaps_out = 10
     border_size = 1
     # col.active_border = rgba(f7768eff) rgba(7aa2f7ff) rgba(7dcfffff) rgba(7aa2f7ff) rgba(2ac3deff) 45deg
-    col.inactive_border = rgba(ffffffff)
-    col.active_border = rgba(ffffffff)
+    col.inactive_border = rgba(ffffff00)
+    col.active_border = rgba(ffffff00)
     layout = dwindle
 }
 
@@ -51,7 +54,6 @@ decoration {
         size = 2
         passes = 1
     }
-    drop_shadow = false
 #    drop_shadow = yes
 #    shadow_range = 4
 #    shadow_render_power = 3
@@ -98,7 +100,7 @@ bind = $mainMod, C, killactive,
 bind = $mainMod SHIFT, M, exit, 
 bind = $mainMod, E, exec, dolphin
 bind = $mainMod, V, togglefloating, 
-bind = $mainMod, R, exec, wofi --show drun
+bind = $mainMod, R, exec, wofi --show drun --hide-scroll --width 400 --height 300 --style ~/dots/wofi-style
 bind = $mainMod, P, pseudo, # dwindle
 bind = $mainMod, J, togglesplit, # dwindle
 # Move focus with mainMod + arrow keys

@@ -1,0 +1,40 @@
+*, *:hover, *:active, *:focus {
+  /*background: transparent;*/
+  /*border: none;*/
+  outline: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+window {
+  border: 3px double white;
+  background-color: #1a1b26;
+  color: #565f89;
+  font: 16px 'ProggyCleanTT'
+}
+
+#outer-box {
+  margin: 3px;
+}
+
+#entry {
+  padding: 8px 10px;
+}
+
+#entry:selected, #text:selected {
+  background-color: #24283b;
+  color: #c0caf5;
+}
+
+#input, input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+  padding: 8px 10px;
+  color: #c0caf5;
+}
+
+#input > div {
+  border: 1px solid red;
+}
