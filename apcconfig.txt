@@ -1,0 +1,15 @@
+"apc.activityBar": {
+    "position": "top",
+    "size": 30,
+    "itemMargin": 5
+  },
+  "apc.statusBar": {
+    "position": "editor-bottom",
+    "height": 25,
+    "fontSize": 12
+  },
+  "apc.menubar.compact": true,
+  "apc.electron": {
+    "frame": false,
+    "titleBarStyle": "hidden"
+  },
